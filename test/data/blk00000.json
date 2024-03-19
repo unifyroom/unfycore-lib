@@ -1,0 +1,36 @@
+{
+  "header": {
+    "hash": "00045efb999da18a6decf5e47e772061e0acd401c5e5158791dad1ba9efd994c",
+    "version": 536870912,
+    "prevHash": "0007d2c5c678f1a1c0c1d95c64ef9ff1d3ad8807a26cb97c7e68f0d5e90bdbc7",
+    "merkleRoot": "6f3641420b42449bb605d36b0c21454a6caf945c52abdfd6ffc82af81fbe458b",
+    "time": 1709721197,
+    "bits": 520615917,
+    "nonce": 17019
+  },
+  "transactions": [
+    {
+      "hash": "6f3641420b42449bb605d36b0c21454a6caf945c52abdfd6ffc82af81fbe458b",
+      "version": 2,
+      "inputs": [
+        {
+          "prevTxId": "0000000000000000000000000000000000000000000000000000000000000000",
+          "outputIndex": 4294967295,
+          "sequenceNumber": 4294967295,
+          "script": "011e0101"
+        }
+      ],
+      "outputs": [
+        {
+          "satoshis": 18000000000,
+          "script": "76a9147c74fb031507930458151f2ebfe46b22b17013ea88ac"
+        },
+        {
+          "satoshis": 2000000000,
+          "script": "76a9141a4221aeac0f92e0c6e628fbfe67c80377c3529a88ac"
+        }
+      ],
+      "nLockTime": 0
+    }
+  ]
+}
