@@ -16,14 +16,14 @@ var Output = UnfycoreLib.Transaction.Output;
 var output1 = Output.fromObject({
   satoshis: 1000,
   script: Script.buildPublicKeyHashOut(
-    Address.fromString('XxGJLCB7BBXAgA1AbgtNDMyVpQV9yXd7oB', 'mainnet')
+    Address.fromString('UZQjygEwHU36bkeQzwYPEsVBUfyHonnmwA', 'mainnet')
   ).toHex()
 });
 
 var output2 = Output.fromObject({
   satoshis: 2000,
   script: Script.buildPublicKeyHashOut(
-    Address.fromString('7hRXBxSmKqaJ6JfsVaSeZqAeyxvrxcHyV1', 'mainnet')
+    Address.fromString('UjnKpC9UEeguGfmny46jG78oepwNYZ7L6a', 'mainnet')
   ).toHex()
 });
 

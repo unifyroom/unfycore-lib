@@ -962,7 +962,7 @@ describe('Script', function () {
   });
   describe('#buildPublicKeyHashOut', function () {
     it('should create script from livenet address', function () {
-      var address = Address.fromString('XxGJLCB7BBXAgA1AbgtNDMyVpQV9yXd7oB');
+      var address = Address.fromString('UZQjygEwHU36bkeQzwYPEsVBUfyHonnmwA');
       var s = Script.buildPublicKeyHashOut(address);
       should.exist(s);
       s.toString().should.equal(
@@ -971,7 +971,7 @@ describe('Script', function () {
       s.isPublicKeyHashOut().should.equal(true);
       s.toAddress()
         .toString()
-        .should.equal('XxGJLCB7BBXAgA1AbgtNDMyVpQV9yXd7oB');
+        .should.equal('UZQjygEwHU36bkeQzwYPEsVBUfyHonnmwA');
     });
     it('should create script from testnet address', function () {
       var address = Address.fromString('ydDreK3fAT9V8fNHdXEUqCATJQYoEpACQn');
@@ -1154,12 +1154,12 @@ describe('Script', function () {
       data.should.deep.equal(Buffer.alloc(0));
     });
     it('for a P2PKH address', function () {
-      var address = Address.fromString('XxGJLCB7BBXAgA1AbgtNDMyVpQV9yXd7oB');
+      var address = Address.fromString('UZQjygEwHU36bkeQzwYPEsVBUfyHonnmwA');
       var script = Script.buildPublicKeyHashOut(address);
       expect(BufferUtil.equal(script.getData(), address.hashBuffer)).to.be.true;
     });
     it('for a P2SH address', function () {
-      var address = Address.fromString('7hRXBxSmKqaJ6JfsVaSeZqAeyxvrxcHyV1');
+      var address = Address.fromString('UjnKpC9UEeguGfmny46jG78oepwNYZ7L6a');
       var script = new Script(address);
       expect(BufferUtil.equal(script.getData(), address.hashBuffer)).to.be.true;
     });
@@ -1207,13 +1207,13 @@ describe('Script', function () {
       script.toAddress().network.should.equal(Networks.defaultNetwork);
     });
     it('for a P2PKH address', function () {
-      var stringAddress = 'XxGJLCB7BBXAgA1AbgtNDMyVpQV9yXd7oB';
+      var stringAddress = 'UZQjygEwHU36bkeQzwYPEsVBUfyHonnmwA';
       var address = new Address(stringAddress);
       var script = new Script(address);
       script.toAddress().toString().should.equal(stringAddress);
     });
     it('for a P2SH address', function () {
-      var stringAddress = '7hRXBxSmKqaJ6JfsVaSeZqAeyxvrxcHyV1';
+      var stringAddress = 'UjnKpC9UEeguGfmny46jG78oepwNYZ7L6a';
       var address = new Address(stringAddress);
       var script = new Script(address);
       script.toAddress().toString().should.equal(stringAddress);

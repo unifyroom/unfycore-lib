@@ -533,19 +533,19 @@ describe('PublicKey', function () {
     var data = [
       [
         '7qh6LYnLN2w2ntz2wwUhRUEgkQ2j8XB16FGw77ZRDZmC29bn7cD',
-        'Xywgfc872nn5CKtpATCoAjZCc4v96pJczy',
+        'UmErnjjoMM54ern7y6YFHjNua2rbTRwmo5',
       ],
       [
         '7rve4MxeWFQHGbSYH6J2yaaZd3MBUqoDEwN6ZAZ6ZHmhTT4r3hW',
-        'XpmouUj9KKJ99ZuU331ZS1KqsboeFnLGgK',
+        'Uc4z2cLqdsb8c6nmqgM1Z19YqZk6ZsviGj',
       ],
       [
         'XBuxZHH6TqXUuaSjbVTFR1DQSYecxCB9QA1Koyx5tTc3ddhqEnhm',
-        'XxV9h4Xmv6Pup8tVAQmH97K6grzvDwMG9F',
+        'UjnKpC9UEeguGfmny46jG78oepwNYZ7L6a',
       ],
       [
         'XHMkZqWcY6Zkoq1j42NBijD8z5N5FtNy2Wx7WyAfXX2HZgxry8cr',
-        'Xn7ZrYdExuk79Dm7CJCw7sfUWi2qWJSbRy',
+        'UZQjygEwHU36bkeQzwYPEsVBUfyHonnmwA',
       ],
     ];
 
