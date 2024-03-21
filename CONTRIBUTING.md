@@ -1,6 +1,6 @@
 # Contributing to unfycore-lib
 
-We're working hard to make _-lib_ the most powerful JavaScript library for working with Dash. Our goal is to have _-lib_ be a library that can be used by anyone interested in Dash, and to level expertise differences with great design and documentation.
+We're working hard to make _-lib_ the most powerful JavaScript library for working with Unifyroom. Our goal is to have _-lib_ be a library that can be used by anyone interested in Unifyroom, and to level expertise differences with great design and documentation.
 
 ## Community
 

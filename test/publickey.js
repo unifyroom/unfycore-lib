@@ -515,7 +515,7 @@ describe('PublicKey', function () {
         '03c87bd0e162f26969da8509cafcb7b8c8d202af30b928c582e263dd13ee9a9781'
       );
       var address = pk.toAddress('livenet');
-      address.toString().should.equal('XjnkiGYQkC3bbAzvDjP7jkNouHCHNRr3ug');
+      address.toString().should.equal('UX5vqQA74kLb3htE2NiZrkCWsF8jis6YwE');
     });
 
     it('should output this known testnet address correctly', function () {

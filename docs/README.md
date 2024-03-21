@@ -5,9 +5,9 @@
 [![Release Date](https://img.shields.io/github/release-date/unifyroom/unfycore-lib)](https://github.com/unifyroom/unfycore-lib/releases/latest)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen)](https://github.com/RichardLitt/standard-readme)
 
-A pure and powerful JavaScript Dash library.
+A pure and powerful JavaScript Unifyroom library.
 
-Dash is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Dash network allows for highly resilient Dash infrastructure, and the developer community needs reliable, open-source tools to implement Dash apps and services.
+Unifyroom is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Unifyroom network allows for highly resilient Unifyroom infrastructure, and the developer community needs reliable, open-source tools to implement Unifyroom apps and services.
 
 ### Install
 

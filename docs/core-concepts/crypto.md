@@ -1,4 +1,4 @@
-# Dash Crypto
+# Unifyroom Crypto
 
 The cryptographic primitives (ECDSA and HMAC) implementations in this package have been reviewed on the upstream repository, no changes have been done since then, however, more audits and reviews are welcomed.
 

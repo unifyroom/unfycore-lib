@@ -1,4 +1,4 @@
-# Dash Mnemonic
+# Unifyroom Mnemonic
 
 The `Mnemonic` class provides an implementation of a mnemonic code or mnemonic sentence – a group of easy to remember words – for the generation of deterministic keys. The class handles code generation and its later conversion to a [HDPrivateKey](hierarchical.md). See [the official BIP-0039](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) for technical background information.
 

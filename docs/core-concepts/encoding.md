@@ -1,6 +1,6 @@
 # Encoding
 
-The `unfycore.Encoding` namespace contains utilities for encoding information in common formats in the Dash ecosystem.
+The `unfycore.Encoding` namespace contains utilities for encoding information in common formats in the Unifyroom ecosystem.
 
 ## Base58 & Base58Check
 

@@ -1,7 +1,7 @@
 {
   "name": "@unifyroom/unfycore-lib",
-  "version": "1.0.1",
-  "description": "A pure and powerful JavaScript Dash library.",
+  "version": "1.0.3",
+  "description": "A pure and powerful JavaScript Unifyroom library.",
   "author": "Unifyroom Core Group, Inc. <unifyroomcoin@gmail.com>",
   "main": "index.js",
   "unpkg": "dist/unfycore-lib.min.js",

@@ -1,6 +1,6 @@
-# Dash Address
+# Unifyroom Address
 
-Represents a Dash address. Addresses are the most popular way to make Dash transactions. See [the Dash documentation](https://dash-docs.github.io/en/glossary/address) for technical background information.
+Represents a Unifyroom address. Addresses are the most popular way to make Unifyroom transactions. See [the Unifyroom documentation](https://unfy-docs.github.io/en/glossary/address) for technical background information.
 
 ## Instantiate an Address
 

@@ -46,11 +46,11 @@ describe('GovObject', function () {
         ._verifyAddress('yXGeNPQXYFXhLAN1ZKrAjxzzBnZ2JZNKnh', 'testnet')
         .should.equal(true);
       govObject
-        ._verifyAddress('XuYDEzZzKxnknPDiVKe91sJaD1nQnnn5B6', 'livenet')
+        ._verifyAddress('UZshoCfvGUEsd6E11jwfYPibgMLYBf3zZA', 'livenet')
         .should.equal(true);
       govObject
         ._verifyAddress(
-          'XuYDEzZzKxn&&knPDiVKe91sJasfajkshfjD1nQnnn5B6',
+          'UuYDEzZzKxn&&knPDiVKe91sJasfajkshfjD1nQnnn5B6',
           'livenet'
         )
         .should.equal(false);
@@ -59,27 +59,27 @@ describe('GovObject', function () {
         .should.equal(false);
       govObject
         ._verifyAddress(
-          'XuYDEzZzKxn&&knPDiVKe91sJa/sfajkshfjD1nQnnn5B6',
+          'UuYDEzZzKxn&&knPDiVKe91sJa/sfajkshfjD1nQnnn5B6',
           'livenet'
         )
         .should.equal(false);
       govObject
-        ._verifyAddress('XuYDEzZzKxnknPDiVKe91sJaD1nQnnn5B', 'livenet')
+        ._verifyAddress('XuYDEzZzKxnknPDiVKe91sJaD1nQnnnasd5B', 'livenet')
         .should.equal(false);
       govObject
-        ._verifyAddress(' XuYDEzZzKxnknPDiVKe91sJaD1nQnnn5B', 'livenet')
+        ._verifyAddress(' XuYDEzZzKxnknPDiVKe91sJaD1nQnnnasd5B', 'livenet')
         .should.equal(false);
       govObject
-        ._verifyAddress('XuYDEzZzKxnknPDiVKe91sJaD1nQnnn5B ', 'livenet')
+        ._verifyAddress('XuYDEzZzKxnknPDiVKe91sJaD1nQnnnasd5B ', 'livenet')
         .should.equal(false);
       govObject
-        ._verifyAddress('$XuYDEzZzKxnknPDiVKe91sJaD1nQnnn5B', 'livenet')
+        ._verifyAddress('$XuYDEzZzKxnknPDiVKe91sJaD1nQnnnasd5B', 'livenet')
         .should.equal(false);
       govObject
         ._verifyAddress('yXGeNPQXYFXhLAN1ZKrAjxzzBnZ2JZNKnh', 'livenet')
         .should.equal(false);
       govObject
-        ._verifyAddress('XuYDEzZzKxnknPDiVKe91sJaD1nQnnn5B6', 'testnet')
+        ._verifyAddress('XuYDEzZzKxnknPDiVKe91sJaD1nQnnnasd5B6', 'testnet')
         .should.equal(false);
     });
     it('should cast a stringified JSON Proposal into a Proposal Object', function () {

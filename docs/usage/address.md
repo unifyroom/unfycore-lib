@@ -198,7 +198,7 @@ Returns : {boolean} - if it's a pay to script hash type address
 
 **Parameters**: None.
 
-**Returns**: {Buffer} Dash address buffer
+**Returns**: {Buffer} Unifyroom address buffer
 
 ## .toString()
 
@@ -206,11 +206,11 @@ Returns : {boolean} - if it's a pay to script hash type address
 
 **Parameters**: None.
 
-**Returns**: {string} Dash address
+**Returns**: {string} Unifyroom address
 
 ```js
 const address = new Address(...);
-address.toString() // XgBQcYbKff4q7cEs7AaxoPN2CAiBbFc2JT
+address.toString() // UTUajgD1zDMpa98AuovQvPBjA8edxzgjY4
 ```
 
 ## .toJSON() / .toObject()
@@ -227,9 +227,9 @@ address.toString() // XgBQcYbKff4q7cEs7AaxoPN2CAiBbFc2JT
 
 **Parameters**: None.
 
-**Returns**: {string} Dash address
+**Returns**: {string} Unifyroom address
 
 ```js
 const address = new Address(...);
-address.toInspect() // <Address: XgBQcYbKff4q7cEs7AaxoPN2CAiBbFc2JT, type: pubkeyhash, network: livenet>
+address.toInspect() // <Address: UTUajgD1zDMpa98AuovQvPBjA8edxzgjY4, type: pubkeyhash, network: livenet>
 ```

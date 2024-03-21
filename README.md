@@ -5,9 +5,9 @@
 [![Release Date](https://img.shields.io/github/release-date/unifyroom/unfycore-lib)](https://github.com/unifyroom/unfycore-lib/releases/latest)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen)](https://github.com/RichardLitt/standard-readme)
 
-A pure and powerful JavaScript Dash library.
+A pure and powerful JavaScript Unifyroom library.
 
-Dash is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Dash network allows for highly resilient Dash infrastructure, and the developer community needs reliable, open-source tools to implement Dash apps and services.
+Unifyroom is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Unifyroom network allows for highly resilient Unifyroom infrastructure, and the developer community needs reliable, open-source tools to implement Unifyroom apps and services.
 
 ## Table of Contents
 
@@ -135,8 +135,8 @@ Some examples can be found [here](docs/examples.md), below is a list of direct l
 - [Generate an address from a SHA256 hash](docs/examples.md#generate-an-address-from-a-sha256-hash)
 - [Import an address via WIF](docs/examples.md#import-an-address-via-wif)
 - [Create a Transaction](docs/examples.md#create-a-transaction)
-- [Sign a Dash message](docs/examples.md#sign-a-bitcoin-message)
-- [Verify a Dash message](docs/examples.md#verify-a-bitcoin-message)
+- [Sign a Unifyroom message](docs/examples.md#sign-a-bitcoin-message)
+- [Verify a Unifyroom message](docs/examples.md#verify-a-bitcoin-message)
 - [Create an OP RETURN transaction](docs/examples.md#create-an-op-return-transaction)
 - [Create a 2-of-3 multisig P2SH address](docs/examples.md#create-a-2-of-3-multisig-p2sh-address)
 - [Spend from a 2-of-2 multisig P2SH address](docs/examples.md#spend-from-a-2-of-2-multisig-p2sh-address)
@@ -150,5 +150,5 @@ Please send pull requests for bug fixes, code optimization, and ideas for improv
 Code released under [the MIT license](LICENSE).
 
 Copyright 2013-2017 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.  
-Copyright 2016-2017 The Dash Foundation, Inc.  
+Copyright 2016-2017 The Unifyroom Foundation, Inc.  
 Copyright 2017-2020 Unifyroom Core Group, Inc.

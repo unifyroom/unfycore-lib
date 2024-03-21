@@ -23,8 +23,8 @@ describe('Address', function () {
     '3c3fa3d4adcaf8f52d5b1843975e122548269937',
     'hex'
   );
-  var buf = Buffer.concat([Buffer.from([0x4c]), pubkeyhash]);
-  var str = 'XgBQcYbKff4q7cEs7AaxoPN2CAiBbFc2JT';
+  var buf = Buffer.concat([Buffer.from([0x44]), pubkeyhash]);
+  var str = 'UTUajgD1zDMpa98AuovQvPBjA8edxzgjY4';
 
   it("can't build without data", function () {
     (function () {
@@ -76,11 +76,11 @@ describe('Address', function () {
 
   // livenet valid
   var PKHLivenet = [
-    'XfcbSaK1dtEe6GmNRE5pMS3WYpoJ2D1BDm',
-    'XjnkiGYQkC3bbAzvDjP7jkNouHCHNRr3ug',
-    'XmWSeuzXVq1mb6GtyTXkYT3UgLo5uVR7XG',
-    'XtfsoT5X39fbxyH4h8VJoQ8CVyLjojjUST',
-    '    XtfsoT5X39fbxyH4h8VJoQ8CVyLjojjUST   \t\n',
+    'Uj1KpvF1FPAGddhUued48aLjZz1qnW2QcS',
+    'UX5vqQA74kLb3htE2NiZrkCWsF8jis6YwE',
+    'UjNvKE6MeBwG5k46ervnQGmeFrz8cP52jz',
+    'UTW41REYe3YvJWgBzVCD1EzJQVoN66EqhT',
+    '    UgjRG6mVP2uxFBmN729nwRVX17RBpaHayi   \t\n',
   ];
 
   // livenet p2sh
@@ -251,12 +251,12 @@ describe('Address', function () {
 
     it('addresses with whitespace are validated correctly', function () {
       var ws =
-        '  \r \t    \n XjnkiGYQkC3bbAzvDjP7jkNouHCHNRr3ug \t \n            \r';
+        '  \r \t    \n UX5vqQA74kLb3htE2NiZrkCWsF8jis6YwE \t \n            \r';
       var error = Address.getValidationError(ws);
       should.not.exist(error);
       Address.fromString(ws)
         .toString()
-        .should.equal('XjnkiGYQkC3bbAzvDjP7jkNouHCHNRr3ug');
+        .should.equal('UX5vqQA74kLb3htE2NiZrkCWsF8jis6YwE');
     });
   });
 
@@ -372,7 +372,7 @@ describe('Address', function () {
         '0285e9737a74c30a873f74df05124f2aa6f53042c2fc0a130d6cbd7d16b944b004'
       );
       var address = Address.fromPublicKey(pubkey, 'livenet');
-      address.toString().should.equal('XjN7vAMjVoRv1qM3wyi6QvAMUL3JySADS7');
+      address.toString().should.equal('UWfJ3HyRpMiuUNEMkd3YXuz4SHymJX7Xv3');
     });
 
     it('should use the default network for pubkey', function () {
@@ -389,9 +389,9 @@ describe('Address', function () {
           '4833fef26c8be4c4823754869ff4e46755b85d851077771c220e2610496a29d98'
       );
       var a = Address.fromPublicKey(pubkey, 'livenet');
-      a.toString().should.equal('XfzNcxcdGBvYpvYepybHinJkh2Tpo8wAaV');
+      a.toString().should.equal('UTHYk6EKakDYHTRxdcvjqn8TezQH9EedLr');
       var b = new Address(pubkey, 'livenet', 'pubkeyhash');
-      b.toString().should.equal('XfzNcxcdGBvYpvYepybHinJkh2Tpo8wAaV');
+      b.toString().should.equal('UTHYk6EKakDYHTRxdcvjqn8TezQH9EedLr');
     });
 
     it('should classify from a custom network', function () {
@@ -430,9 +430,9 @@ describe('Address', function () {
         );
         var buf = s.toBuffer();
         var a = Address.fromScript(s, 'livenet');
-        a.toString().should.equal('XtzzeEiVCzMCApgvdbzv97VE4cXjQWEWZH');
+        a.toString().should.equal('UgJAmNLBXYeBdMaESFLNG7Jw2aUBiryP8p');
         var b = new Address(s, 'livenet');
-        b.toString().should.equal('XtzzeEiVCzMCApgvdbzv97VE4cXjQWEWZH');
+        b.toString().should.equal('UgJAmNLBXYeBdMaESFLNG7Jw2aUBiryP8p');
       });
 
       it('should make this address from a p2sh input script', function () {
@@ -446,7 +446,7 @@ describe('Address', function () {
       });
 
       it('returns the same address if the script is a pay to public key hash out', function () {
-        var address = 'XfzNcxcdGBvYpvYepybHinJkh2Tpo8wAaV';
+        var address = 'UTHYk6EKakDYHTRxdcvjqn8TezQH9EedLr';
         var script = Script.buildPublicKeyHashOut(new Address(address));
         Address(script, Networks.livenet).toString().should.equal(address);
       });
@@ -486,7 +486,7 @@ describe('Address', function () {
   });
 
   describe('#toBuffer', function () {
-    it('3c3fa3d4adcaf8f52d5b1843975e122548269937 corresponds to hash XgBQcYbKff4q7cEs7AaxoPN2CAiBbFc2JT', function () {
+    it('3c3fa3d4adcaf8f52d5b1843975e122548269937 corresponds to hash UTUajgD1zDMpa98AuovQvPBjA8edxzgjY4', function () {
       var address = new Address(str);
       address
         .toBuffer()
@@ -536,7 +536,7 @@ describe('Address', function () {
     it('should output formatted output correctly', function () {
       var address = new Address(str);
       var output =
-        '<Address: XgBQcYbKff4q7cEs7AaxoPN2CAiBbFc2JT, type: pubkeyhash, network: livenet>';
+        '<Address: UTUajgD1zDMpa98AuovQvPBjA8edxzgjY4, type: pubkeyhash, network: livenet>';
       address.inspect().should.equal(output);
     });
   });
